@@ -2,37 +2,37 @@ const menuItems = [
   {
     id: 1, name: 'Tomato Soup', category: 'starters', price: 6.50,
     desc: 'Rich and creamy tomato soup with basil.',
-    img: 'https://images.unsplash.com/photo-1572441710194-194fd11f42f3?auto=format&fit=crop&w=400&q=80'
+    img:' https://th.bing.com/th/id/OIP.rl1fzgr5eoW63RSFpPKIYAHaJ4?cb=iwp2&rs=1&pid=ImgDetMain'
   },
   {
     id: 2, name: 'Bruschetta', category: 'starters', price: 7.20,
     desc: 'Grilled bread rubbed with garlic and topped with tomato, olive oil and basil.',
-    img: 'https://images.unsplash.com/photo-1571247132148-4becb2fba3f4?auto=format&fit=crop&w=400&q=80'
+    img: 'https://th.bing.com/th/id/OIP.vWZ1-bZXIivGH_Xzw2kD-wHaHa?cb=iwp2&rs=1&pid=ImgDetMain'
   },
   {
     id: 3, name: 'Grilled Chicken', category: 'mains', price: 15.75,
     desc: 'Juicy grilled chicken breast with herbs and lemon.',
-    img: 'https://images.unsplash.com/photo-1562967916-eb82221dfb44?auto=format&fit=crop&w=400&q=80'
+    img: 'https://www.simplyrecipes.com/thmb/ByLQsxRDUb4lMtx81-bl-i-cgtI=/5156x3437/filters:fill(auto,1)/Simply-Recipes-Grilled-Chicken-LEAD-SEO-Horizontal-1b86ef1e115444ba8b6fb216f2810c7c.jpg'
   },
   {
     id: 4, name: 'Veggie Pasta', category: 'mains', price: 14.00,
     desc: 'Pasta mixed with fresh vegetables and tomato sauce.',
-    img: 'https://images.unsplash.com/photo-1512058564366-c9ec6112601d?auto=format&fit=crop&w=400&q=80'
+    img: 'https://thishealthytable.com/wp-content/uploads/2020/12/veggie-pasta-recipe-3-of-4-720x720.jpg'
   },
   {
     id: 5, name: 'Chocolate Cake', category: 'desserts', price: 6.00,
     desc: 'Decadent chocolate cake topped with chocolate ganache.',
-    img: 'https://images.unsplash.com/photo-1590080877777-8f62bdfecb06?auto=format&fit=crop&w=400&q=80'
+    img: 'https://www.cookingclassy.com/wp-content/uploads/2022/04/easy-chocolate-cake-2.jpg'
   },
   {
     id: 6, name: 'Fruit Tart', category: 'desserts', price: 6.80,
     desc: 'Fresh seasonal fruits on light cream and crisp pastry.',
-    img: 'https://images.unsplash.com/photo-1547516508-8feda44cc2e9?auto=format&fit=crop&w=400&q=80'
+    img: 'https://www.thespruceeats.com/thmb/I-HaDqLtKvwHjyaYnolXmfKdR_E=/2500x1664/filters:fill(auto,1)/fruit-tart-2500-58a474945f9b58819c899b6e.jpg'
   },
   {
     id: 7, name: 'Lemonade', category: 'beverages', price: 3.50,
     desc: 'Freshly squeezed lemonade with a hint of mint.',
-    img: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80'
+    img: 'https://th.bing.com/th/id/OIP.8cXXRnZen-TLoIlNMaq2QQHaHa?cb=iwp2&rs=1&pid=ImgDetMain'
   },
   {
     id: 8, name: 'Iced Coffee', category: 'beverages', price: 4.00,
@@ -42,25 +42,28 @@ const menuItems = [
   {
     id: 9, name: 'Caesar Salad', category: 'salads', price: 9.25,
     desc: 'Romaine lettuce with Caesar dressing, croutons and parmesan.',
-    img: 'https://images.unsplash.com/photo-1571151884418-48deb3ef19a3?auto=format&fit=crop&w=400&q=80'
+    img: 'https://th.bing.com/th/id/OIP.xz7Bz2Id8fjjfF3TErhT3AHaJQ?cb=iwp2&w=1200&h=1500&rs=1&pid=ImgDetMain'
   },
   {
     id: 10, name: 'Greek Salad', category: 'salads', price: 8.90,
     desc: 'Tomatoes, cucumbers, olives, feta and olive oil dressing.',
-    img: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=400&q=80'
+    img: 'https://www.savingdessert.com/wp-content/uploads/2019/04/Greek-Salad-Recipe-2-800x1200.jpg'
   },
   {
     id: 11, name: 'French Fries', category: 'sides', price: 4.50,
     desc: 'Crispy golden fries served with ketchup.',
-    img: 'https://images.unsplash.com/photo-1559789199-88c564b7414a?auto=format&fit=crop&w=400&q=80'
+    img: 'https://img.apmcdn.org/4b2716626c9ff3f6e5dfebe520eb592c33cf1e7b/uncropped/941f50-splendid-table-french-fries.jpg'
   },
   {
     id: 12, name: 'Garlic Bread', category: 'sides', price: 5.20,
     desc: 'Toasted bread with garlic and butter.',
-    img: 'https://images.unsplash.com/photo-1604908177524-690522b56661?auto=format&fit=crop&w=400&q=80'
-  }
-];
-
+    img: 'https://th.bing.com/th/id/OIP.YEW2baM3AMesuHe5yLID0gHaLG?cb=iwp2&rs=1&pid=ImgDetMain'}
+  ];
+ // JavaScript to toggle the navigation menu
+ document.getElementById('hamburger').addEventListener('click', function() {
+  const navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('active'); // Toggle the 'active' class
+});
 // Cart data structure
 let cart = {};
 let discountPercent = 0;
